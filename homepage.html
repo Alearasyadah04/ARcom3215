@@ -1,0 +1,339 @@
+<!doctype html>
+<html>
+<head>
+  
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XC0R5ZJQ2R"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XC0R5ZJQ2R');
+</script>
+	
+<meta charset="utf-8">
+<title>Index Page</title>
+	<link rel="shortcut icon" href="ducklogo.png" type="image/x-icon"><br>
+<html lang="en">
+
+	<style>
+    
+	:root {
+  --color-primary: #fbfbc;
+  --color-white: #e9e9e9;
+  --color-black: #141d28;
+  --color-black-1: #212b38;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.logo {
+  color: var(--color-white);
+  font-size: 30px;
+	font: bold;
+}
+
+.logo span {
+  color: aquamarine;
+	font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+}
+
+.menu-bar {
+  background-color: #7F5A86;
+  height: 90px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+  position: relative;
+  
+}
+
+.menu-bar ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu-bar ul li {
+  /* width: 120px; */
+  padding: 10px 30px;
+  /* text-align: center; */
+  position: relative;
+}
+
+.menu-bar ul li a {
+    font-size: 22px;
+    color: var(--color-white);
+    text-decoration: none;
+    transition: all 0.3s;
+    font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+    font-style: normal;
+}
+
+.menu-bar ul li a:hover {
+    color: yellow;
+        font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+    font-style: italic;
+}
+
+.fas {
+  float: right;
+  margin-left: 10px;
+  padding-top: 3px;
+}
+
+/* dropdown menu style */
+.dropdown-menu {
+  display: none;
+}
+
+.menu-bar ul li:hover .dropdown-menu {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: var(--color-black);
+}
+
+.menu-bar ul li:hover .dropdown-menu ul {
+  display: block;
+  margin: 10px;
+}
+
+.menu-bar ul li:hover .dropdown-menu ul li {
+  width: 150px;
+  padding: 10px;
+}
+
+.dropdown-menu-1 {
+  display: none;
+}
+
+.dropdown-menu ul li:hover .dropdown-menu-1 {
+  display: block;
+  position: absolute;
+  left: 150px;
+  top: 0;
+  background-color: var(--color-black);
+}
+
+.hero {
+  height: calc(30vh - 80px);
+  background-image:;
+  background-position: center;
+}
+
+/* CSS CODE FOR SLIDESHOW */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+  height: 400px;
+  padding-bottom: 5px;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.dott {
+  padding-top: 5px;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.all-browsers {
+  margin: 0;
+  padding: 5px;
+  background-color: lightgray;
+}
+ 
+ /*CSS CODE FOR FOOTER= CHANGE MAILTO COLOUR TEXT*/
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: #7F5A86;
+}
+	</style>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css" />
+    <title>dropdown Menu</title>
+	
+  </head>
+
+  <body>
+    <div class="menu-bar">
+      <h1 class="logo">INTI<span>Journal</span></h1>
+      <ul>
+        <li><a href="homepage.html">Home</a></li>
+
+        <li><a href="aboutintipage.html">About Inti</a>
+		   <div class="dropdown-menu">
+                <ul>
+                  <li><a href="https://newinti.edu.my/">Study Here</a></li>
+                  <li><a href="https://newinti.edu.my/campuses/inti-international-university/#find-a-programme">Programmes</a></li>
+                </ul>
+          </div>
+        </li>
+		  
+        <li><a href="journalpage.html">Journal</a>
+            <div id class="dropdown-menu">
+                <ul>
+                  <li><a href="http://ipublishing.intimal.edu.my/">Journal Reference</a></li>
+				          <li><a href="editorialteam.html">Editorial Team</a></li>
+                </ul>
+          </div>
+        </li>
+		  
+        <li><a href="accountpage.html">Account</a>
+		   <div id class="dropdown-menu">
+                <ul>
+                   <li><a href="#">Login / Sign Up</a></li>
+				           <li><a href="#">Submission</a></li>
+                   <li><a href="https://canvas.instructure.com/login/canvas">Canvas</a></li>
+                </ul>
+          </div>
+		  </li>
+
+      <li><a href="finduspage.html">Find Us</a>
+        <div id class="dropdown-menu">
+                  <ul>
+                    <li><a href="#">Contact Info</a></li>
+                    <li><a href="https://my.linkedin.com/company/inti-international-university-malaysia">LinkedIn</a></li>
+                    <li><a href="https://www.facebook.com/INTI.edu/?locale=ms_MY">Facebook</a></li>
+                  </ul>
+            </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="hero">
+      &nbsp;
+    </div>
+
+    <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <img src="images/img1.png" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="images/img2.png" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="images/img3.png" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<div style="text-align:center" class="dott">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
+  
+<!--CODING FOR HTML-->
+ <footer> 
+  <p>
+  <a href="mailto:intijournal16@gmail.com">intijournal16@gmail.com</a></p>
+ </footer>
+
+</body>
+</html>
+</head>
+
+
+</html>  

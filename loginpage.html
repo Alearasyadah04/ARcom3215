@@ -1,0 +1,360 @@
+<!doctype html>
+<html>
+<head>
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XC0R5ZJQ2R"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-XC0R5ZJQ2R');
+</script>
+
+<meta charset="utf-8">
+<title>Login Page</title>
+	<link rel="shortcut icon" href="ducklogo.png" type="image/x-icon"><br>
+
+<html lang="en">
+	<style>
+	:root {
+  --color-primary: #fbfbc;
+  --color-white: #e9e9e9;
+  --color-black: #141d28;
+  --color-black-1: #212b38;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.logo {
+  color: var(--color-white);
+  font-size: 30px;
+	font: bold;  
+}
+
+.logo span {
+  color: aquamarine;
+	font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+}
+
+.menu-bar {
+  background-color: #7F5A86;
+  height: 90px;
+  padding-top: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+  position: relative;
+}
+
+.menu-bar ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu-bar ul li {
+  /* width: 120px; */
+  padding: 10px 30px;
+  /* text-align: center; */
+  position: relative;
+}
+
+.menu-bar ul li a {
+    font-size: 22px;
+    color: var(--color-white);
+    text-decoration: none;
+    transition: all 0.3s;
+    font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+    font-style: normal;
+}
+
+.menu-bar ul li a:hover {
+    color: yellow;
+        font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+    font-style: italic;
+}
+
+.fas {
+  float: right;
+  margin-left: 10px;
+  padding-top: 3px;
+}
+
+/* dropdown menu style */
+.dropdown-menu {
+  display: none;
+}
+
+.menu-bar ul li:hover .dropdown-menu {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: var(--color-black);
+}
+
+.menu-bar ul li:hover .dropdown-menu ul {
+  display: block;
+  margin: 10px;
+}
+
+.menu-bar ul li:hover .dropdown-menu ul li {
+  width: 150px;
+  padding: 10px;
+}
+
+.dropdown-menu-1 {
+  display: none;
+}
+
+.dropdown-menu ul li:hover .dropdown-menu-1 {
+  display: block;
+  position: absolute;
+  left: 150px;
+  top: 0;
+  background-color: var(--color-black);
+}
+
+.hero {
+  height: calc(100vh - 80px);
+  background-position: center;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  align-self: center;
+  width: 95;
+  height: 100;
+  float: center;
+}
+
+/*CSS CODE FOR ABOUT INTI JOURNAL*/
+h2 {
+    display: block;
+    font-size: 2em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+    text-align: center;
+    color: aqua;
+    padding-bottom: 8px;
+    background: #1abc9c;
+    color: white;
+    font-size: 30px;
+    font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
+    font-style: italic;
+}
+
+/*CSS CODE FOR WORDING UNDER TEAM BEHIND THE SCENE*/
+p1 {
+    display: block;
+    font-size: 1.17em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+    text-align: justify;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    color: black;
+    font-size: 16px;
+    width: 33%;
+	  clear: both;
+	  float: left;
+	  padding-left: 4%;
+	  padding-right: 2%;
+}
+
+p2 {
+    display: block;
+    font-size: 1.17em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+    text-align: justify;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    color: black;
+    font-size: 16px;
+    width: 33%;
+	  clear: none;
+	  float: left;
+	  padding-left: 4%;
+	  padding-right: 2%;
+}
+
+/*CSS CODE FOR LOGIN*/
+* {
+  box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.loginbtn {
+  background-color: #000000;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+  color: yellow;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+	</style>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css" />
+    <title>dropdown Menu</title>
+  </head>
+  <body>
+    <div class="menu-bar">
+      <h1 class="logo">INTI<span>Journal</span></h1>
+      <ul>
+        <li><a href="homepage.html">Home</a></li>
+		  
+        <li><a href="#">About INTI</a>
+		  <div class="dropdown-menu">
+                <ul>
+                  <li><a href="https://newinti.edu.my/">Study Here</a></li>
+                  <li><a href="https://newinti.edu.my/campuses/inti-international-university/#find-a-programme">Programmes</a></li>
+                </ul>
+          </div>
+		  </li>
+		  
+        <li><a href="journalpage.html">Journal</a>
+            <div id class="dropdown-menu">
+                <ul>
+                  <li><a href="http://ipublishing.intimal.edu.my/">Journal Reference</a></li>
+				          <li><a href="editorialteam.html">Editorial Team</a></li>
+                </ul>
+          </div>
+        </li>
+		  
+        <li><a href="#">Account</a>
+		  <div id class="dropdown-menu">
+                <ul>
+                   <li><a href="loginpage.html">Login</a></li>
+				          <li><a href="signuppage.html">Sign Up</a></li>
+                  <li><a href="https://canvas.instructure.com/login/canvas">Canvas</a></li>
+                </ul>
+          </div>
+		  </li>
+		  
+        <li><a href="#">Find Us</a>
+		  <div id class="dropdown-menu">
+                <ul>
+                  <li><a href="#">Contact Info</a></li>
+                  <li><a href="https://my.linkedin.com/company/inti-international-university-malaysia">LinkedIn</a></li>
+                  <li><a href="https://www.facebook.com/INTI.edu/?locale=ms_MY">Facebook</a></li>
+                </ul>
+          </div>
+		  </li>
+      </ul>
+    </div>
+
+    <div class="empty-div">
+    </div>
+
+    <form action="/action_page.php">
+      <div class="container">
+        <h1>LOGIN</h1>
+    
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" id="email" required>
+    
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+    
+        <label for="psw-repeat"><b>ID Number</b></label>
+        <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+       </label>
+    
+        <button type="submit" class="loginbtn">LOGIN</button>
+        <div><span class="psw">Forgot <a href="signuppage.html">password?</a></span></div>
+
+
+      </div>
+      
+      <div class="container signin">
+        <p>Already have an account? <a href="signuppage.html">SIGN UP</a>.</p>
+      </div>
+
+    </form>
+    </div>
+  </body>
+</html>
+</head>
+</html>
