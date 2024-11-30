@@ -173,10 +173,10 @@ p1 {
     font-style: italic;
     color: black;
     font-size: 16px;
-    width: 33%;
+    width: 46%;
 	  clear: both;
 	  float: left;
-	  padding-left: 4%;
+	  padding-left: 2%;
 	  padding-right: 2%;
 }
 
@@ -193,26 +193,96 @@ p2 {
     font-style: italic;
     color: black;
     font-size: 16px;
-    width: 33%;
-	  clear: none;
-	  float: left;
-	  padding-left: 4%;
-	  padding-right: 2%;
+    width: 46%;
+    clear: none;
+    float: left;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+/*CSS CODE FOR LOGIN*/
+* {
+  box-sizing: border-box;
 }
 
-.centerp2 {
-  display: block;
-  width: auto;
-  height: auto;
-  margin-left: 10px;
-  margin-right: 6px;
-  clear: none;
-	float: left;
-	padding-left: 4%;
-	padding-right: 2%;
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  background-color: white;
 }
 
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
 
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.loginbtn {
+  background-color: #000000;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+  color: yellow;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+.btn {
+  background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #3e8e41;
+  color: white;
+}
 	</style>
 <head>
     <meta charset="UTF-8" />
@@ -225,9 +295,9 @@ p2 {
     <div class="menu-bar">
       <h1 class="logo">INTI<span>Journal</span></h1>
       <ul>
-        <li><a href="homepage.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
 		  
-        <li><a href="#">About INTI</a>
+        <li><a href="aboutinti.html">About INTI</a>
 		  <div class="dropdown-menu">
                 <ul>
                   <li><a href="https://newinti.edu.my/">Study Here</a></li>
@@ -245,7 +315,7 @@ p2 {
           </div>
         </li>
 		  
-        <li><a href="#">Account</a>
+        <li><a href="accountpage.html">Account</a>
 		  <div id class="dropdown-menu">
                 <ul>
                   <li><a href="loginpage.html">Login</a></li>
@@ -258,7 +328,7 @@ p2 {
         <li><a href="#">Find Us</a>
 		  <div id class="dropdown-menu">
                 <ul>
-                  <li><a href="#">Contact Info</a></li>
+                  <li><a href="finduspage.html">Contact Info</a></li>
                   <li><a href="https://my.linkedin.com/company/inti-international-university-malaysia">LinkedIn</a></li>
                   <li><a href="https://www.facebook.com/INTI.edu/?locale=ms_MY">Facebook</a></li>
                 </ul>
@@ -270,55 +340,28 @@ p2 {
 
     <div class="h1">
       <div class="h1">
-      <h2>TEAM BEHIND THE SCENE</h2>
+      <h2>WELCOME BACK!</h2>
           
         
-          <p1><b><u>Managing Editor</u></b>
-          <br>Dr. Jason See Toh Seong Kuan
-          <br> INTI International University, Malaysia
-          <br> <a href="mailto:jasonsee.toh@newinti.edu.my"> jasonsee.toh@newinti.edu.my</a></p1>
-          
-          <p2><b><u>Associate Managing Editor</u></b>
-          <br> Dr. Tan Seng Teck
-          <br> INTI International University, Malaysia
-          <br> <a href="mailto:sengteck.tan@newinti.edu.my"> sengteck.tan@newinti.edu.my</a></p2>
-
-          <p2><b><u>Associate Managing Editor</u></b>
-          <br> Professor Dr. Wong Chee Hoo
-          <br> INTI International University, Malaysia
-          <br> <a href="mailto:cheehoo.wong@newinti.edu.my"> cheehoo.wong@newinti.edu.my</a></p2>
-          
-          <!--HTML CODE FOR THE NEXT LINE-->
-          <p1><b><u>Editorial Board</u></b>
-          <br>Professor Dr. Martin Samy, Kedge Business School
-          <br> France
-          <br> <a href="mailto:dr.martin.samy@gmail.com"> dr.martin.samy@gmail.com</a></p1>
-
-          <p2><b><u>Editorial Board</u></b>
-          <br> Professor Dr. William Chua, Professor
-          <br> IPE Management School, France
-          <br> <a href="mailto:principal@mantissa.edu.my"> principal@mantissa.edu.my</a></p2>
-          
-          <p2><b><u>Editorial Board</u></b>
-          <br> Associate Professor Dr. Shahryar Sorooshian
-          <br> Gothenburg University, Sweden
-          <br> <a href="mailto: shahryar.sorooshian@gu.se">  shahryar.sorooshian@gu.se</a></p2>
-
-          <p1><b><u>Editorial Board</u></b>
-          <br>Dr. Alex Lee
-          <br> University of Hertfordshire Collaborative Partnership Leader, United Kingdom
-          <br> <a href="mailto:a.3.lee@herts.ac.uk"> a.3.lee@herts.ac.uk</a></p1>
-
-          <p2><b><u>Editorial Board</u></b>
-          <br> Associate Professor Dr. Ilham Sentosa
-          <br>  University Kuala Lumpur (UniKL), Malaysia
-          <br> <a href="mailto:ilham@unikl.edu.my"> ilham@unikl.edu.my</a></p2>
-          
-          <p2><b><u>Editorial Board</u></b>
-          <br> Dr. Alvin Liau Chee How, Senior Lecturer, 
-          <br> Victoria University, Australia
-          <br> <a href="mailto: chee.liau@live.vu.edu.au">  chee.liau@live.vu.edu.au</a></p2>
+        <p1><b><u>LOG IN TO YOUR ACCOUNT</u></b>
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" id="email" required>
+    
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+    
+        <label for="psw-repeat"><b>ID Number</b></label>
+        <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+       </label>
+    
+        <button type="submit" class="loginbtn">LOGIN</button>
+        <div><span class="psw">Forgot <a href="signuppage.html">password?</a></span></div>
        </div>
+
+	<p2><h2>Fading Buttons - "Fade in Effect"</h2></p2>
+
+        <button class="btn">Hover Over Me</button>
 </body>
 </html>
 	</head>
